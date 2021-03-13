@@ -11,4 +11,14 @@
 
 educational_grant, expenses = 10000, 12000
 
-# TODO здесь ваш код
+monts = 1
+total_expenses = expenses
+while monts < 10:
+    expenses *= 1.03
+    total_expenses += expenses
+    monts += 1
+
+result = total_expenses - educational_grant * 10
+print(result)
+
+
